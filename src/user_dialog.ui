@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user_Dialog</class>
+ <widget class="QDialog" name="user_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>我的信息 - 求是图书管理系统</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>591</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>用户信息</string>
+   </property>
+   <widget class="QLabel" name="user_info_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>571</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTreeView" name="borrowedbookview">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>591</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="rootIsDecorated">
+    <bool>false</bool>
+   </property>
+   <property name="headerHidden">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return_Button">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>430</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

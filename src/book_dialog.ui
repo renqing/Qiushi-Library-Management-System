@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>book_Dialog</class>
+ <widget class="QDialog" name="book_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书查询 - 求是图书管理系统</string>
+  </property>
+  <widget class="QGroupBox" name="book_group">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>621</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>图书清单</string>
+   </property>
+   <widget class="QTreeView" name="borrowedbookview">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>591</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="rootIsDecorated">
+     <bool>false</bool>
+    </property>
+    <property name="headerHidden">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>621</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>图书查询</string>
+   </property>
+   <widget class="QPushButton" name="search_Button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查询</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="return_Button">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="keyword_edit">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>30</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>54</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关键词：</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manageBook_Dialog</class>
+ <widget class="QDialog" name="manageBook_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书管理 - 求是图书管理系统</string>
+  </property>
+  <widget class="QGroupBox" name="group_booklist">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>681</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>图书列表</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTreeView" name="userview">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="rootIsDecorated">
+       <bool>false</bool>
+      </property>
+      <property name="headerHidden">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="group_add_single">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>681</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>单册图书添加</string>
+   </property>
+   <widget class="QLineEdit" name="single_title">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图书名称：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_type">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>110</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>120</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图书类型：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_pub_press">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>160</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>出版社：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>160</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>年份：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_pub_year">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>150</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>单价：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_price">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>110</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>位置：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_location">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>190</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_num_total">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数量：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="single_add">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="single_clear">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>230</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>80</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>作者：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_author">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="single_isbn">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ISBN：</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>single_type</zorder>
+   <zorder>label_2</zorder>
+   <zorder>single_pub_press</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>single_pub_year</zorder>
+   <zorder>label_5</zorder>
+   <zorder>single_price</zorder>
+   <zorder>label_6</zorder>
+   <zorder>single_location</zorder>
+   <zorder>single_num_total</zorder>
+   <zorder>label_7</zorder>
+   <zorder>single_add</zorder>
+   <zorder>single_clear</zorder>
+   <zorder>label_8</zorder>
+   <zorder>single_author</zorder>
+   <zorder>single_isbn</zorder>
+   <zorder>label_9</zorder>
+   <zorder>single_title</zorder>
+  </widget>
+  <widget class="QGroupBox" name="group_nav">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>681</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>操作选项</string>
+   </property>
+   <widget class="QPushButton" name="guide_add_batch">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>批量添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="guide_booklist">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图书列表</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="guide_add_single">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>单册添加</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
